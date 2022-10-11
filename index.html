@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin battles</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="buttons-group">
+                <div class="start buttons-group__input">
+                    <label for="start">
+                        <div class="buttons-group__input__block input-left">&#9884;</div>
+                        <p>START</p>
+                        <div class="buttons-group__input__block input-right">&#9884;</div>
+                    </label>
+                    <input type="button" name="start" id="start">
+                    <div class="buttons-group__input__button"></div>
+                </div>
+                <div class="fight buttons-group__input">
+                    <label for="fight">
+                        <div class="buttons-group__input__block input-left">&#9884;</div>
+                        <p>FIGHT</p>
+                        <div class="buttons-group__input__block input-right">&#9884;</div>
+                    </label>
+                    <input type="button" name="fight" id="fight">
+                    <div class="buttons-group__input__button"></div>
+                </div>
+                <div class="reset buttons-group__input">
+                    <label for="reset">
+                        <div class="buttons-group__input__block input-left">&#9884;</div>
+                        <p>RESET</p>
+                        <div class="buttons-group__input__block input-right">&#9884;</div>
+                    </label>
+                    <input type="button" name="reset" id="reset" >
+                    <div class="buttons-group__input__button"></div>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <section class="heroes">
+                <div class="heroes__choosen">
+                    <div class="heroes__choosen__icon you">
+                    </div>
+                    <div class="heroes__choosen__icon enemy">
+                    </div>
+                </div>
+                <div class="heroes__list">
+                    <div class="heroes__list__place" id="place"> 
+                        <div id="mond">
+                            <label for="mond-radio">
+                                <img src="/img/region/mond.png" alt="Mondstadt icon">
+                            </label>
+                            <input type="radio" name="place-radio" id="mond-radio" checked="true">
+                            <h4>Mondstadt</h4>
+                        </div>
+                        <div id="liyue">
+                            <label for="liyue-radio">
+                                <img src="/img/region/liyue.png" alt="Liyue icon">
+                            </label>
+                            <input type="radio" name="place-radio" id="liyue-radio">
+                            <h4>Liyue</h4>
+                        </div>
+                        <div id="inazuma">
+                            <label for="inazuma-radio">
+                                <img src="/img/region/inazuma.png" alt="Inazuma icon">
+                            </label>
+                            <input type="radio" name="place-radio" id="inazuma-radio">
+                            <h4>Inazuma</h4>
+                        </div>
+                    </div>
+                    <div class="heroes__list__personajes slider"></div>
+                    <div class="heroes__list__switch-buttons switches">
+                        <div class="switches__left">
+                            <img src="/img/switch.png" alt="Left">
+                        </div>
+                        <div class="switches__herous-number"></div>
+                        <div class="switches__right">
+                            <img src="/img/switch.png" alt="right">
+                        </div>
+                    </div>
+                    <h5 class="heroes__list__hint">Choose your unit and enemy</h5>
+                </div>
+            </section>
+            <section class="battle-arrea"></section>
+        </main>
+    </div>
+</body>
+
+</html>
